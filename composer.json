@@ -1,0 +1,15 @@
+{
+    "name": "autoload/namespace",
+    "require": {
+      "ext-curl": "*",
+        "ext-apcu": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "appClasses\\" : "appClasses"
+        },
+        "classmap": [
+            "appClasses"
+        ]
+    }
+}
