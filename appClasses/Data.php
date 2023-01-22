@@ -24,6 +24,7 @@ class Data extends Curl
             for ($i = 0; $i < sizeof($items_array); $i++) {
                 $this->all_data[] = [
                     'img' => $items_array[$i]->asset->images->steam,
+                    '' => $items_array[$i]
                 ];
             }
             // Возвращаем полученынй массив из нужных значений

@@ -1,0 +1,141 @@
+/*Импортируем шрифты*/
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&family=Source+Code+Pro&display=swap');
+
+/*Шрифт*/
+/*font-family: 'Solitreo', cursive;*/
+/*font-family: 'Source Code Pro', monospace;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(164, 60, 236);
+}
+
+.container {
+    margin: 0 auto;
+    width: 1320px;
+    padding: 0 25px;
+}
+
+.main_header {
+    font-family: 'Solitreo', cursive;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.main_header a {
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    font-size: 58px;
+}
+
+.main_content {
+}
+
+.select_block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.dropdown {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22px;
+    position: relative;
+    min-width: 405px;
+}
+
+.select {
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #7830af;
+    border-radius: 18px;
+    padding: 0.3em 1em;
+    cursor: pointer;
+}
+
+.select-clicked {
+    box-shadow: 0 0 0.3em #7830af;
+    border-color: black;
+}
+
+.select-clicked .caret {
+    border-top-color: #65278a;
+}
+
+.select:hover {
+    box-shadow: 0 0 0.3em #7830af;
+    border-color: black;
+    transition: 0.5s;
+}
+
+.select:hover .caret {
+    border-top-color: #65278a;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 11px solid #7a2ba9;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 0.3em #7830af;
+    margin-top: 10px;
+   /opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li {
+    padding: 5px 10px;
+}
+
+.menu li:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.menu li:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.menu li:hover {
+    background-color: #7830af;
+    color: wheat;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #7830af;
+}
+
+.menu-open {
+    opacity: 1;
+    display: block;
+}
