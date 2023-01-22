@@ -5,7 +5,6 @@ namespace appClasses;
 class Data extends Curl
 {
     public Curl $page; // Экземпляр класса Curl
-    public array $all_data = []; //Переменная содержит массив позиций с нужными параметрами
 
     public function __construct()
     {
@@ -17,18 +16,8 @@ class Data extends Curl
         if ($order === 'asc' || $order === 'desc') {
             // Отправляет cURL запрос на получение 60 позиций в порядке возрастания или убывания
             $page_query = $this->page->sendQuery("https://cs.money/1.0/market/sell-orders?limit=60&offset=0&order=$order&sort=price&type=2");
-            // Переменная $items_array принимает массив из объектов (позиций)
-            $items_array = json_decode($page_query)->items;
-
-            // Итерируемся по массиву из полученных позиций и добавляем нужные параметры в массив
-            for ($i = 0; $i < sizeof($items_array); $i++) {
-                $this->all_data[] = [
-                    'img' => $items_array[$i]->asset->images->steam,
-                    '' => $items_array[$i]
-                ];
-            }
-            // Возвращаем полученынй массив из нужных значений
-            return $this->all_data;
+            // Возвращаем массив из обьектов который будем передавать в класс Items
+            return json_decode($page_query)->items;
         } else {
             return "Input doesn't match 'asc' or 'desc' value";
         }
