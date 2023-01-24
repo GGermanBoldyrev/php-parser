@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/style/style.css">
     <title>GB Project</title>
 </head>
@@ -18,26 +18,16 @@
     </header>
     <main class="main_content">
         <div class="select_block">
-            <div class="dropdown">
-                <div class="select">
-                        <span class="selected">
-                            Please choose an option
-                        </span>
-                    <div class="caret"></div>
-                </div>
-                <ul class="menu">
-                    <li class="active" value="">Please choose an option</li>
-                    <li value="low_price">Low price knifes</li>
-                    <li value="top_price">Top price knifes</li>
-                    <li value="top_discount">Top discount knifes</li>
-                </ul>
-            </div>
+            <?php include 'viewParts/dropdown_view.php'?>
         </div>
-        <div class="content_block">
-            <!--content-->
+        <div class="items_block">
+            <?php include 'viewParts/items_view.php'?>
+        </div>
+        <div class="chat_block">
+            <?php include 'viewParts/chat_view.php'?>
         </div>
     </main>
 </div>
-<script src="js/index.js"></script>
+<script src="/js/index.js"></script>
 </body>
 </html>
