@@ -5,11 +5,12 @@ use appClasses\Data as Data;
 use appClasses\Items as Items;
 
 $a = false; //$a нужна для отображения либо списка items либо текста о выборе опций
+
 $data_obj = new Data();
 $items_obj = new Items();
+
 $data = $data_obj->getDataByPriceDesc();
 $items = $items_obj->getItemsData($data);
-$items = [];
 ?>
 
 <?php if (sizeof($items) > 0): ?>
@@ -55,3 +56,4 @@ $items = [];
         </div>
     </div>
 <?php endif; ?>
+

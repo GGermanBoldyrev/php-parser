@@ -12,9 +12,7 @@
 <body>
 <div class="container">
     <header class="main_header">
-        <div><a href="https://vk.com/zuzuka2001" target="_blank">vk.com/zuzuka2001</a></div>
-        <div class="title">GB Project</div>
-        <div class="test">csgo-knife-parser</div>
+        <?php include 'viewParts/header_view.php'?>
     </header>
     <main class="main_content">
         <div class="select_block">
