@@ -12,19 +12,28 @@
 <body>
 <div class="container">
     <header class="main_header">
-        <?php include 'viewParts/header_view.php'?>
+        <?php include 'viewParts/header_view.php' ?>
     </header>
     <main class="main_content">
         <div class="select_block">
-            <?php include 'viewParts/dropdown_view.php'?>
+            <?php include 'viewParts/dropdown_view.php' ?>
         </div>
-        <div class="items_block">
-            <?php include 'viewParts/items_view.php'?>
+        <div class="items_block_empty">
+            <?php include 'viewParts/items_block_empty.php' ?>
         </div>
-        <div class="chat_block">
-            <?php include 'viewParts/chat_view.php'?>
+        <div class="items_block_low_price">
+            <?php include 'viewParts/items_block_low_price.php' ?>
+        </div>
+        <div class="items_block_top_price">
+            <?php include 'viewParts/items_block_top_price.php' ?>
+        </div>
+        <div class="items_block_top_discount">
+            <?php include 'viewParts/items_block_top_discount.php' ?>
         </div>
     </main>
+</div>
+<div class="button">
+    <button class="up_button">↑</button>
 </div>
 <script src="/js/index.js"></script>
 </body>

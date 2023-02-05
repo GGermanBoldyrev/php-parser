@@ -60,7 +60,7 @@ body {
     font-size: 58px;
 }
 
-.main_content > div{
+.main_content > div {
     margin: 100px 0;
 }
 
@@ -68,6 +68,93 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.items_block_title {
+    font-family: 'Solitreo', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* items styles */
+
+.items_list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 75px;
+    justify-content: space-between;
+}
+
+.item {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 19px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0 0.3em #7830af;
+}
+
+.item_img {
+    width: 100%;
+}
+
+.item_info {
+    padding-left: 20px;
+}
+
+.item_info > * {
+    margin-bottom: 15px;
+}
+
+.item_name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    padding-top: 15px;
+    height: 130px;
+}
+
+.item_default_price {
+    display: flex;
+    flex-direction: column;
+}
+
+.item_price_usd {
+    display: flex;
+    flex-direction: column;
+}
+
+.item_price_rub {
+    display: flex;
+    flex-direction: column;
+}
+
+.item_discount_number {
+    font-weight: bold;
+}
+
+.item_price_rub_number {
+    font-weight: lighter;
+}
+
+/*up button*/
+
+.up_button {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: inherit;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 4px 17px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.up_button:hover {
+    background-color: #8732c9;
+    cursor: pointer;
 }
 
 /* dropdown styles */
@@ -223,30 +310,13 @@ body {
     font-weight: bold;
 }
 
-/*Если нет объектов*/
+/*empty data*/
 
 .empty_data {
-    min-height: calc(100vh - 500px);
+    min-height: calc(100vh - 700px);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.empty_data_text {
     font-family: 'Source Code Pro', monospace;
     font-size: 36px;
 }
-
-/*Стили для чата*/
-
-.chat_block {
-    display: flex;
-    justify-content: center;
-}
-
-.chat {
-    width: 1000px;
-    height: 500px;
-    border: 2px solid black;
-}
-
