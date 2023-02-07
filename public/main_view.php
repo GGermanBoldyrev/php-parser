@@ -12,23 +12,23 @@
 <body>
 <div class="container">
     <header class="main_header">
-        <?php include '../view/viewParts/header_view.php' ?>
+        <?php include '../viewParts/header_view.php' ?>
     </header>
     <main class="main_content">
         <div class="select_block">
-            <?php include '../view/viewParts/dropdown_view.php' ?>
+            <?php include '../viewParts/dropdown_view.php' ?>
         </div>
         <div class="items_block_empty">
-            <?php include '../view/viewParts/items_block_empty.php' ?>
+            <?php include '../viewParts/items_block_empty.php' ?>
         </div>
         <div class="items_block_low_price">
-            <?php include '../view/viewParts/items_block_low_price.php' ?>
+            <?php include '../viewParts/items_block_low_price.php' ?>
         </div>
         <div class="items_block_top_price">
-            <?php include '../view/viewParts/items_block_top_price.php' ?>
+            <?php include '../viewParts/items_block_top_price.php' ?>
         </div>
         <div class="items_block_top_discount">
-            <?php include '../view/viewParts/items_block_top_discount.php' ?>
+            <?php include '../viewParts/items_block_top_discount.php' ?>
         </div>
     </main>
 </div>
